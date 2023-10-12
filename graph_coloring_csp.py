@@ -4,7 +4,6 @@ class GraphColoringCSP:
         self.edges = edges
         self.num_colors = num_colors
         self.adjacency_lists = self.initialize_adjacency_lists(nodes, edges)
-        # self.domain_values = list(range(len(nodes)))
         self.domain_values = list(range(num_colors))
 
     def is_assignment_complete(self, assignment):

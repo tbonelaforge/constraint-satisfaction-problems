@@ -54,8 +54,6 @@ def backtracking_search_recursive(assignment, csp):
             result = backtracking_search_recursive(assignment, csp)
             if result is not None:
                 return result
-            #print("I am having to backtrack!!!")
-            #print(assignment)
             NUM_BACKTRACKS += 1
             del assignment[var]
     return None
@@ -72,8 +70,6 @@ def backtracking_search_recursive2(assignment, csp):
             result = backtracking_search_recursive2(assignment, csp)
             if result is not None:
                 return result
-            #print("I am having to backtrack!!!")
-            #print(assignment.assigned)
             NUM_BACKTRACKS += 1
             assignment.remove_assignment(var)
     return None

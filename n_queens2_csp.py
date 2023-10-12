@@ -12,7 +12,7 @@ class NQueens2CSP:
 
 
     def select_unassigned_variable(self, assignment):
-        # User min remaining values, to pick the next var to assign to
+        # Use min remaining values, to pick the next var to assign to
         min_options = None
         minimizing_var = None
         for var in range(self.columns):
